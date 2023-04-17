@@ -1,0 +1,618 @@
+/***************************
+       HEADER CONTENT  
+ ***************************/
+
+/* Style for the top row */
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  background-color: #F3EFEA;
+  height: auto;
+  padding: 1rem 6.25rem 1rem 6.25rem;
+}
+
+.icon{
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+/* Style for the bottom row */
+
+.bottom-row {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  padding: 1rem 6.25rem 1rem 6.25rem;
+}
+
+.logo img {
+  height: 6rem;
+  width:auto;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  height: auto;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.icons-group{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.navigation-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navigation-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:0.3rem;
+  background-color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation-items h4{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #4B465A;
+}
+
+.arrow{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 3.125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-detail {
+  background-color: white;
+  display: none;
+  position: absolute;
+  align-items: center;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.navigation-category:hover .navigation-detail {
+  display: block;
+}
+
+.navigation-detail a {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1rem;
+  color: #4B465A;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navigation-detail a:hover {
+  background-color: #f1f1f1;
+}
+
+.bottom-row select {
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.bottom-row .icons i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+/***************************
+       OVERAL LAYOUT  
+ ***************************/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.4rem;
+  padding-bottom: 4.375rem;
+}
+
+#main-banner, #About-us{
+  padding-left: none;
+  padding-right: none;
+}
+
+#Arngren-choice, #Featured-brands, #Customer-care{
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+}
+
+
+/***************************
+        COVER IMAGE  
+ ***************************/
+ .carousel {
+  position: relative;
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 500%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  position: relative;
+  width: calc(100% / 5);
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.next {
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: white;
+}
+    
+
+/***************************
+       ARNGREN CHOICE 
+ ***************************/
+ #Arngren-choice{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: none;
+  gap: 2.5rem;
+}
+
+#Arngren-choice h1{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 3.125rem;
+  color:#AA4E43;
+  align-self:start;
+}
+
+.Arngren-choice{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2.5rem;
+  gap:1.5rem;
+  background: #FFFFFF;
+  box-shadow: 0rem 0.3rem 1.25rem rgba(75, 70, 90, 0.25);
+  border-radius: 0.6rem;
+}
+
+.arngren-choice{
+  background-size: 100%;
+  background-position: center;
+  border-radius: 0.6rem 0.6rem 0rem 0rem;
+  width: 30.6rem;
+  height: auto;
+  display: inline-block;
+}
+
+.arngren-choice-03{
+  background: url(images/Arngren-choice-3.jpeg);
+  background-size: 100%;
+  background-position: top;
+  border-radius: 0.6rem 0.6rem 0rem 0rem;
+  width: 30.6rem;
+  height: 23rem;
+}
+
+.product-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product h5{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #4B465A;
+}
+
+.product p{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #4B465A;
+}
+
+#Arngren-choice button{
+  background: none;
+  align-items: center;
+  border-radius: 0.3rem;
+  border: 0.125rem solid #4B465A;
+  padding: 0.8rem 4rem;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #4B465A;
+}
+
+#Arngren-choice button:hover{
+  background: #AA4E43;
+  border: 0.125rem solid #AA4E43;
+  color: white;
+}
+
+/***************************
+      FEATURE BRANDS 
+ ***************************/
+#Featured-brands{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: none;
+  gap: 2.5rem;
+}
+
+#Featured-brands h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3.125rem;
+  color:#AA4E43;
+  align-self:start;
+}
+
+.brand-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1.5rem;
+}
+
+.brand-row div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30.6rem;
+  height: 12rem;
+  border-radius: 0.6rem;
+  box-shadow: 0rem 0.3rem 1.25rem rgba(75, 70, 90, 0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.brand-1{
+  background: url(images/Ansmann-logo.png);
+  background-size: 90%;
+}
+
+.brand-2{
+  background: url(images/Pulsar-logo.png);
+  background-size: 90%;
+}
+
+.brand-3{
+  background: url(images/Redback-logo.jpg);
+  background-size: 80%;
+}
+
+.brand-4{
+  background: url(images/Hornby-logo.png);
+  background-size: 90%;
+}
+
+.brand-5{
+  background: url(images/Piko-logo.jpg);
+  background-size: 80%;
+}
+
+.brand-6{
+  background: url(images/Wilesco_logo.jpg);
+  background-size: 85%;
+}
+
+.brand-7{
+  background: url(images/Ecoride-logo.png);
+  background-size: 90%;
+}
+
+.brand-8{
+  background: url(images/John-Deere-logo.png);
+  background-size: 90%;
+}
+
+.brand-9{
+  background: url(images/Comarth-logo.jpg);
+  background-size: 80%;
+}
+
+@media (max-width: 768px) {
+  .brand-container {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  
+  .brand-box {
+    flex-basis: 100px;
+    margin: 10px;
+  }
+}
+
+/***************************
+      ABOUT US
+ ***************************/
+#About-us{
+  background: linear-gradient(0deg, rgba(75, 70, 90, 0.9), rgba(75, 70, 90, 0.9)), url(images/about-us.jpg);
+  background-size: 100%;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  width: 100%;
+  opacity: 100%;
+ }
+
+ #About-us h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3.125rem;
+  color:white;
+  text-align: center;
+}
+
+#About-us p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: medium;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  line-height: 2.2rem;
+}
+
+#About-us button{
+  background: none;
+  align-items: center;
+  align-self: center;
+  border-radius: 0.3rem;
+  border: 0.125rem solid white;
+  padding: 0.8rem 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+}
+
+#About-us button:hover{
+  background: white;
+  border: 0.125rem solid white;
+  color: #AA4E43;
+}
+
+/***************************
+      CUSTOMER CARE
+ ***************************/
+
+ #Customer-care{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  gap: 2.5rem;
+}
+
+.cc-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem;
+  width: 50%;
+}
+
+#Customer-care h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3.125rem;
+  color:#AA4E43;
+  text-align: left;
+}
+#Customer-care p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #4B465A;
+  text-align: left;
+  line-height: 2.2rem;
+}
+
+#Customer-care button{
+  background: none;
+  align-items: center;
+  border-radius: 0.3rem;
+  border: 0.125rem solid #4B465A;
+  padding: 0.8rem 4rem;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #4B465A;
+}
+
+#Customer-care button:hover{
+  background: #AA4E43;
+  border: 0.125rem solid #AA4E43;
+  color: white;
+}
+
+.cc-photo {
+  background: url(images/customer-care.jpg);
+  width: 846px;
+  height: auto;
+}
+
+/***************************
+       FOOTER CONTENT  
+ ***************************/
+
+ footer {
+  background-color: #F3EFEA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 4rem 6.25rem 4rem 6.25rem;
+}
+
+.footer-row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  padding: 0rem;
+}
+
+.column {
+  width: 15rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.column img{
+  width: 13rem;
+  height: 13rem;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+.column h3 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #4B465A;
+  line-height: 3rem;
+
+}
+
+.column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.column ul li {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1rem;
+  color: #4B465A;
+  line-height: 1.3rem;
+  text-align: center;
+}
+
+.footer-row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.social{
+  height:3.125rem;
+  width: 3.125rem;
+}
+
+footer p{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1rem;
+  color: #4B465A;
+  line-height: 2rem;
+  text-align: center;
+}
+

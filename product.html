@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arngren</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Your styles, with CSS reset first -->
+    <link href="reset.css" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="top-row">
+        <img class="icon" src="images/Translate.svg">
+        <img class="icon" src="images/Currency.svg">
+      </div>
+      <div class="bottom-row">
+        <div class="logo">
+          <img src="images/Logo.png" alt="Logo">
+        </div>
+        <div class="navigation">
+          <div class="navigation-category">
+            <button class="navigation-items">
+              <h4>About Us</h4>
+              <img class="arrow" src="images/arrow-down.svg">
+            </button>
+          </div>
+          <div class="navigation-category">
+            <button class="navigation-items">
+              <h4>Vehicles</h4>
+              <img class="arrow" src="images/arrow-down.svg">
+            </button>
+            <div class="navigation-detail">
+              <a href="#">Scooters</a>
+              <a href="product.html">Bikes</a>
+              <a href="#">Motorcycles</a>
+              <a href="#">Go Karts</a>
+              <a href="#">Cars</a>
+              <a href="#">Vans</a>
+            </div>
+          </div>
+          <div class="navigation-category">
+            <button class="navigation-items">
+              <h4>Appliances</h4>
+              <img class="arrow" src="images/arrow-down.svg">
+            </button>
+          </div>
+          <div class="navigation-category">
+            <button class="navigation-items">
+              <h4>Arngren's Choices</h4>
+            </button>
+          </div>
+        </div>
+        <div class="icons-group">
+          <img class="icon" src="images/Search.svg">
+          <img class="icon" src="images/Cart.svg">
+          <img class="icon" src="images/Account.svg">
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="bike-title">Bikes</h1>
+      <section class="sort-by">
+        <h4>Sort by:</h4>
+        <div class="sort-by-content">
+          <img class="sort-by-filter" src="images/filter.svg" alt="filter"/>
+          <img class="sort-by-add" src="images/add.svg" alt="add"/>
+        </div>
+      </section>
+      <section id="product-showcase">
+        <section class="filter">
+            <div class="filter-title">
+              <h3>Filter</h3>
+            </div>
+            <div class="filter-item">
+              <h4>Sort by Price</h4>
+              <img class="add-icon" src="images/add.svg" alt="add-icon"/>
+            </div>
+            <div class="dropdown">
+              <div onclick="myFunction()" class="filter-item" id="myDropdownmenu">
+                <h4>Sort by Color</h4>
+                <img class="add-icon" src="images/add.svg" alt="add-icon"/>
+              </div>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#" class="btn active" data-filter="all">Show All</a>
+                <a href="#" class="btn" data-filter="black">Black</a>
+                <a href="#" class="btn" data-filter="orange">Orange</a>
+                <a href="#" class="btn" data-filter="green">Green</a>
+                <a href="#" class="btn" data-filter="white">White</a>
+                <a href="#" class="btn" data-filter="multicolor">Multicolor</a>
+              </div>
+            </div>
+            <div class="filter-item">
+              <h4>Sort by Brand</h4>
+              <img class="add-icon" src="images/add.svg" alt="add-icon"/>
+            </div>
+            <div class="filter-item">
+              <h4>Sort by User Rating</h4>
+              <img class="add-icon" src="images/add.svg" alt="add-icon"/>
+            </div>
+            <div class="filter-item">
+              <h4>Sort by Release Date</h4>
+              <img class="add-icon" src="images/add.svg" alt="add-icon"/>
+            </div>
+        </section>
+        <section class="product-showcase">
+          <section class="row">
+            <div id="product" class="filterDiv black">
+                <div class="image-container">
+                  <div class="product-image-01"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Electric Scooter 36V/250w</h5>
+                  <p>NOK 4,998</p>
+                  <button onclick="window.location.href='checkout.html'">View more</button>
+                </div>
+
+            </div>
+            <div id="product" class="filterDiv white">
+                <div class="image-container">
+                  <div class="product-image-02"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK XXXX</p>
+                  <button>View more</button>
+                </div>
+            </div>
+            <div id="product" class="filterDiv black">
+                <div class="image-container">
+                  <div class="product-image-03"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK XXXX</p>
+                  <button>View more</button>
+                </div>
+            </div>
+            <div id="product" class="filterDiv white">
+                <div class="image-container">
+                  <div class="product-image-04"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK XXXX</p>
+                  <button>View more</button>
+                </div>
+            </div>
+            <div id="product" class="filterDiv orange">
+                <div class="image-container">
+                  <div class="product-image-05"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK XXXX</p>
+                  <button>View more</button>
+                </div>
+            </div>
+            <div id="product" class="filterDiv black">
+                <div class="image-container">
+                  <div class="product-image-06"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK XXXX</p>
+                  <button>View more</button>
+                </div>
+            </div>
+            <div id="product" class="filterDiv green">
+                <div class="image-container">
+                  <div class="product-image-07"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK xxxx</p>
+                  <button>View more</button>
+                </div>
+            </div>
+            <div id="product" class="filterDiv green">
+                <div class="image-container">
+                  <div class="product-image-08"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK xxxx</p>
+                  <button>View more</button>
+                </div>
+            </div>
+            <div id="product" class="filterDiv orange">
+                <div class="image-container">
+                  <div class="product-image-09"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK xxxx</p>
+                  <button>View more</button>
+                </div>
+            </div>
+            <div id="product" class="filterDiv multicolor">
+                <div class="image-container">
+                  <div class="product-image-10"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK XXXX</p>
+                  <button>View more</button>
+                </div>
+            </div>
+            <div id="product" class="filterDiv orange">
+                <div class="image-container">
+                  <div class="product-image-11"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK XXXX</p>
+                  <button>View more</button>
+                </div>
+            </div>
+            <div id="product" class="filterDiv orange">
+                <div class="image-container">
+                  <div class="product-image-12"></div>
+                  <img class="favourite-icon" src="images/favourite.svg" alt="favourite"/>
+                </div>
+                <div class="product-name">
+                  <h5>Bike Name</h5>
+                  <p>NOK XXXX</p>
+                  <button>View more</button>
+                </div>
+            </div>
+          </section>
+          <section class="page-numbers">
+            <div class="number-container">
+              <img class="arrow-left-icon" src="images/arrow-left.svg" alt="arrow-left-icon"/>
+            </div>
+            <p>Go to page</p>
+            <div class="number-container">1</div>
+            <div class="number-container">2</div>
+            <div class="number-container">3</div>
+            <div class="number-container">4</div>
+            <p>.....</p>
+            <div class="number-container">20</div>
+            <div class="number-container">
+              <img class="arrow-right-icon" src="images/arrow-right.svg" alt="arrow-right-icon"/>
+            </div>
+          </section>
+          <section class="page-numbers">
+            <p>View</p>
+            <div class="number-of-product">12</div>
+            <p>products per page</p>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-row1">
+        <div class="column">
+          <img src="images/Logo.png" alt="Logo">
+        </div>
+        <div class="column">
+          <h3>Customer Care</h3>
+          <ul>
+            <li>Contact Us</li>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Track My Order</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>Gift Cards</li>
+            <li>Sign Up For Email</li>
+            <li>Become A Member</li>
+            <li>Track My Membership Rules</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>General</h3>
+          <ul>
+            <li>Help</li>
+            <li>Careers</li>
+            <li>Ad Choices</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-row2">
+        <img class="social" src="images/instagram.png">
+        <img class="social" src="images/facebook.png">
+        <img class="social" src="images/tiktok.png">
+        <img class="social" src="images/twitter.png">
+      </div>
+      <p>All Rights Reserved by Arngren.net</p>
+    </footer>
+    <!-- Script before the ending body tag -->
+    <script src="product.js"></script>
+  </body>
+</html>
