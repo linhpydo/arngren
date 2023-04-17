@@ -1,0 +1,643 @@
+/***************************
+       HEADER CONTENT  
+ ***************************/
+
+/* Style for the top row */
+
+.top-row {
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-end;
+       align-items: center;
+       gap: 1rem;
+       background-color: #F3EFEA;
+       height: auto;
+       padding: 1rem 6.25rem 1rem 6.25rem;
+     }
+     
+     .icon{
+       width: 1.875rem;
+       height: 1.875rem;
+     }
+     
+     /* Style for the bottom row */
+     
+     .bottom-row {
+       background-color: white;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       height: 6rem;
+       padding: 1rem 6.25rem 1rem 6.25rem;
+     }
+     
+     .logo img {
+       height: 6rem;
+       width:auto;
+     }
+     
+     .icons{
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-end;
+       align-items: center;
+       gap: 1rem;
+       height: auto;
+       padding: 1rem 0rem 1rem 0rem;
+     }
+     
+     .icons-group{
+       display: flex;
+       flex-direction: row;
+       align-items: flex-end;
+       gap: 1rem;
+     }
+     
+     .navigation-category {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+     }
+     
+     .navigation-items {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       gap:0.3rem;
+       background-color: white;
+       padding: 10px;
+       border: none;
+       cursor: pointer;
+     }
+     
+     .navigation-items h4{
+       font-family: 'Montserrat';
+       font-weight: 500;
+       font-size: 1.3rem;
+       color: #4B465A;
+     }
+     
+     .arrow{
+       width: 1.5rem;
+       height: 1.5rem;
+     }
+     
+     .navigation {
+       display: flex;
+       flex-direction: row;
+       gap: 3.125rem;
+       justify-content: space-between;
+       align-items: center;
+     }
+     
+     .navigation-detail {
+       background-color: white;
+       display: none;
+       position: absolute;
+       align-items: center;
+       top: 100%;
+       left: 0;
+       z-index: 1;
+     }
+     
+     .navigation-category:hover .navigation-detail {
+       display: block;
+     }
+     
+     .navigation-detail a {
+       font-family: 'Montserrat';
+       font-weight: 500;
+       font-size: 1rem;
+       color: #4B465A;
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
+     }
+     
+     .navigation-detail a:hover {
+       background-color: #f1f1f1;
+     }
+     
+     .bottom-row select {
+       font-size: 16px;
+       padding: 10px;
+       margin-left: 10px;
+     }
+     
+     .bottom-row .icons i {
+       font-size: 20px;
+       margin-left: 10px;
+     }
+     
+     /***************************
+            FOOTER CONTENT  
+      ***************************/
+     
+     footer {
+       background-color: #F3EFEA;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 2.5rem;
+       padding: 4rem 6.25rem 4rem 6.25rem;
+     }
+     
+     .footer-row1 {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 100%;
+       align-items: center;
+       align-self: center;
+       padding: 0rem;
+     }
+     
+     .column {
+       width: 15rem;
+       height: auto;
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+       align-items: center;
+     }
+     
+     .column img{
+       width: 13rem;
+       height: 13rem;
+     }
+     
+     .column:last-child {
+       margin-right: 0;
+     }
+     
+     .column h3 {
+       font-family: 'Montserrat';
+       font-weight: 700;
+       font-size: 1.6rem;
+       color: #4B465A;
+       line-height: 3rem;
+     
+     }
+     
+     .column ul {
+       display: flex;
+       flex-direction: column;
+       gap: 1.3rem;
+       align-items: center;
+       list-style: none;
+       margin: 0;
+       padding: 0;
+     }
+     
+     .column ul li {
+       font-family: 'Montserrat';
+       font-weight: 500;
+       font-size: 1rem;
+       color: #4B465A;
+       line-height: 1.3rem;
+       text-align: center;
+     }
+     
+     .footer-row2 {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       gap: 1.875rem;
+     }
+     
+     .social{
+       height:3.125rem;
+       width: 3.125rem;
+     }
+     
+     footer p{
+       font-family: 'Montserrat';
+       font-weight: 500;
+       font-size: 1rem;
+       color: #4B465A;
+       line-height: 2rem;
+       text-align: center;
+     }
+
+/***************************
+       OVERAL LAYOUT  
+ ***************************/
+
+main {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 2rem;
+       padding-top: 4.375rem;
+       padding-bottom: 4.375rem;
+       padding-left: 6.25rem;
+       padding-right: 6.25rem;
+}
+
+/***************************
+       HEADER & SORT BY  
+ ***************************/
+.bike-title{
+       font-family: 'Montserrat';
+       font-weight: 700;
+       font-size: 3.125rem;
+       text-align: center;
+       color: #AA4E43;
+       padding-bottom: 2rem;
+}
+
+.sort-by{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       align-self:flex-end;
+       gap: 1.875rem;
+}
+
+.sort-by h4{
+       font-family: 'Montserrat';
+       font-weight: 700;
+       font-size: 1.6rem;
+       color: #4B465A;
+}
+
+.sort-by-content{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       padding: 1rem 1.25rem;
+       gap: 13.5rem;
+       background: white;
+       box-shadow: 0rem 0.3rem 1.25rem rgba(75, 70, 90, 0.25);
+       border-radius: 0.3rem;
+}
+
+.sort-by-filter{
+       width: 1.875rem;
+       height: 1.875rem;
+}
+
+.sort-by-add{
+       width: 1.875rem;
+       height: 1.875rem;
+}
+/***************************
+       FILTER & PRODUCTS
+ ***************************/
+
+#product-showcase{
+       display: flex;
+       flex-direction: row;
+       align-items:flex-start;
+       align-self:flex-start;
+       gap: 1.875rem;
+ }
+/***************************
+       FILTER
+ ***************************/
+
+ .filter{
+       display: flex;
+       flex-direction: column;
+       align-items:flex-start;
+       padding: none;
+       margin: none;
+       gap: 1.875rem;
+       align-self:flex-start;
+}
+
+.filter h3{
+       font-family: 'Montserrat';
+       font-weight: 700;
+       font-size: 1.875rem;
+       color: white;
+}
+
+.filter h4{
+       font-family: 'Montserrat';
+       font-weight: 700;
+       font-size: 1.6rem;
+}
+
+.filter-title{
+       display: flex;
+       align-items: center;
+       padding: 1.25rem 1.6rem;
+       width: 32rem;
+       background: #4B465A;
+       box-shadow: 0rem 0.3rem 1.25rem rgba(75, 70, 90, 0.25);
+       border-radius: 0.3rem;
+}
+
+.filter-item{
+       position: relative;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       padding: 1.25rem 1.6rem;
+       width: 32rem;
+       background: white;
+       color: #4B465A;
+       box-shadow: 0rem 0.3rem 1.25rem rgba(75, 70, 90, 0.25);
+       border-radius: 0.3rem;
+}
+
+.dropdown {
+       position: relative;
+       display: inline-block;
+       padding:none;
+       background: none;
+     }
+
+.dropdown-content{
+       display: none;
+       position: absolute;
+       background-color: white;
+       padding: 1.6rem;
+       width: 32rem;
+       overflow: auto;
+       z-index: 1;
+}
+
+.add-icon{
+       position: absolute;
+       width: 1.875rem;
+       height: 1.875rem;
+       right: 1.25rem;
+}
+
+#myDropdownmenu{
+       cursor: pointer;
+       border: none;
+}
+
+.show {
+       display: block;
+}
+
+.btn{
+       font-family: 'Montserrat';
+       font-weight: 500;
+       font-size: 1.3rem;
+       color: #4B465A;
+       text-decoration: none;
+       padding: 0.5rem;
+       display: block;  
+}
+
+.active{
+       color:#4B465A;
+       background-color: white;
+}
+
+
+/***************************
+      PRODUCTS
+***************************/
+
+.row{
+       display:grid;
+       grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+       column-gap: 1rem;
+       row-gap: 1rem;;
+       max-width: 63rem;
+}
+
+.filterDiv{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 0.5rem;
+       padding-top: none;
+       padding-bottom: 1.875rem;
+       width: 19.75rem;
+       background: #FFFFFF;
+       box-shadow: 0rem 0.3rem 1.25rem rgba(118, 114, 130, 0.25);
+       border-radius: 0.6rem;
+       float: left;
+}
+
+.image-container{
+       position: relative;
+       width: 19.75rem;
+}
+
+.favourite-icon{
+       position: absolute;
+       width: 1.875rem;
+       height: 1.875rem;
+       background-color: white;
+       box-shadow: 0rem 0.2rem 0.6rem rgba(75, 70, 90, 0.25);
+       border-radius: 0.3rem;
+       padding: 0.2rem;
+       top: 1.25rem;
+       right: 1.25rem;
+}
+
+.product-image-01{
+       background: url(images/bike-0.jpg);
+       background-size: 100%;
+       background-position: center;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-02{
+       background: url(images/bike-1.jpg);
+       background-size: 100%;
+       background-position: 50% 75%;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-03{
+       background: url(images/bike-2.jpg);
+       background-size: 145%;
+       background-position: right 80%;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-04{
+       background: url(images/bike-3.jpg);
+       background-size: 100%;
+       background-position: center;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-05{
+       background: url(images/bike-4.jpg);
+       background-size: 100%;
+       background-position: 50% 70%;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-06{
+       background: url(images/bike-5.jpg);
+       background-size: 100%;
+       background-position: 50% 60%;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-07{
+       background: url(images/bike-6.jpg);
+       background-size: 100%;
+       background-position: 50% 60%;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-08{
+       background: url(images/bike-7.jpg);
+       background-size: 100%;
+       background-position: 50% 60%;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-09{
+       background: url(images/bike-8.jpg);
+       background-size: 100%;
+       background-position: 20% 85%;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-10{
+       background: url(images/bike-9.jpg);
+       background-size: 100%;
+       background-position: center;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-11{
+       background: url(images/bike-10.jpg);
+       background-size: 100%;
+       background-position: bottom;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-image-12{
+       background: url(images/bike-11.jpg);
+       background-size: 150%;
+       background-position: right center;
+       border-radius: 0.6rem 0.6rem 0rem 0rem;
+       width: 19.75rem;
+       height: 12rem;
+}
+
+.product-name{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-top: 2rem;
+       gap: 1rem;
+}
+
+#product h5{
+       font-family: 'Montserrat';
+       font-weight: 700;
+       font-size: 1.25rem;
+       color: #4B465A;
+}
+
+#product p{
+       font-family: 'Montserrat';
+       font-weight: 500;
+       font-size: 1.25rem;
+       color: #4B465A;
+}
+
+.product-name button{
+       background: white;
+       align-items: center;
+       border-radius: 0.3rem;
+       border: 0.125rem solid #4B465A;
+       padding: 0.8rem 5rem;
+       font-family: 'Montserrat';
+       font-weight: 700;
+       font-size: 1.25rem;
+       color: #4B465A;
+}
+
+.product-name button:hover{
+       background: #AA4E43;
+       border: 0.125rem solid #AA4E43;
+       color: white;
+}
+
+/***************************
+       PAGE NUMBERS  
+ ***************************/
+
+.page-numbers{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       background-color: white;
+       box-shadow: 0rem 0.2rem 0.6rem rgba(75, 70, 90, 0.25);
+       padding: 1rem 3rem;
+       gap: 1.25rem;
+       border-radius: 0.3rem;
+       margin-top: 2rem;
+       margin-bottom: 2rem;
+}
+
+.page-numbers p{
+       font-family: 'Montserrat';
+       font-weight: 500;
+       font-size: 1.25rem;
+       color: #4B465A;
+}
+
+.number-container{
+       background-color: white;
+       box-shadow: 0rem 0.2rem 0.6rem rgba(75, 70, 90, 0.25);
+       padding: 0.6rem 0.8rem;
+       border-radius: 0.3rem;
+       font-family: 'Montserrat';
+       font-weight: 500;
+       color: #4B465A;
+       font-size: 1.25rem;
+}
+
+.number-of-product{
+       background-color:#4B465A;
+       box-shadow: 0rem 0.2rem 0.6rem rgba(75, 70, 90, 0.25);
+       padding: 0.6rem 0.8rem;
+       border-radius: 0.3rem;
+       font-family: 'Montserrat';
+       font-weight: 500;
+       color: white;
+       font-size: 1.25rem;
+}
+
+.arrow-left-icon {
+       width: 1.875rem;
+       height: 1.875rem;
+}
+
+.arrow-right-icon {
+       width: 1.875rem;
+       height: 1.875rem;
+}
+

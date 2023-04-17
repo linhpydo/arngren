@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arngren</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Your styles, with CSS reset first -->
+    <link href="reset.css" rel="stylesheet">
+    <link href="checkout.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header>
+      <div class="top-row">
+        <img class="icon" src="images/Translate.svg">
+        <img class="icon" src="images/Currency.svg">
+      </div>
+      <div class="bottom-row">
+        <div class="logo">
+          <img src="images/Logo.png" alt="Logo">
+        </div>
+        <div class="navigation">
+          <div class="navigation-category">
+            <button class="navigation-items">
+              <h4>About Us</h4>
+              <img class="arrow" src="images/arrow-down.svg">
+            </button>
+          </div>
+          <div class="navigation-category">
+            <button class="navigation-items">
+              <h4>Vehicles</h4>
+              <img class="arrow" src="images/arrow-down.svg">
+            </button>
+            <div class="navigation-detail">
+              <a href="#">Scooters</a>
+              <a href="product.html">Bikes</a>
+              <a href="#">Motorcycles</a>
+              <a href="#">Go Karts</a>
+              <a href="#">Cars</a>
+              <a href="#">Vans</a>
+            </div>
+          </div>
+          <div class="navigation-category">
+            <button class="navigation-items">
+              <h4>Appliances</h4>
+              <img class="arrow" src="images/arrow-down.svg">
+            </button>
+          </div>
+          <div class="navigation-category">
+            <button class="navigation-items">
+              <h4>Arngren's Choices</h4>
+            </button>
+          </div>
+        </div>
+        <div class="icons-group">
+          <img class="icon" src="images/Search.svg">
+          <img class="icon" src="images/Cart.svg">
+          <img class="icon" src="images/Account.svg">
+        </div>
+      </div>
+    </header>
+    <section class="body">
+      <h1 class="checkout-title">Checkout</h1>
+      <main>
+        <section id="order-summary">
+          <h3>Order Summary</h3>
+          <div class="product">
+            <span class="product-img"></span>
+            <span class="product-detail">
+              <h4>Electric Scooter 36V/250w</h4>
+              <p>Quantity: 01</p>
+            </span>
+          </div>
+          <hr>
+          <div class="fee-detail">
+            <span class="fee-detail-subhead">
+              <p>Subtotal</p>
+              <p>Shipping</p>
+              <p>GST/HST</p>
+            </span>
+            <span class="fee-detail-content">
+              <p>CAD 660 (NOK 4,998)</p>
+              <p>CAD 15</p>
+              <p>CAD 120</p>
+            </span>
+          </div>
+          <hr>
+          <div class="fee-detail">
+            <span class="fee-detail-subhead">
+              <p>Order Total</p>
+            </span>
+            <span class="fee-detail-content">
+              <p>CAD 795</p>
+            </span>
+          </div>
+        </section>
+        <form id="checkout-form" action="confirmation.html">
+          <section class="form-group" required>
+            <button type="button" id="member-login-btn">Member Login</button>
+            <button type="button" id="continue-guest-btn">Continue as Guest</button>
+          </section>
+          <h3>Shipping Information</h3>
+          <div class="form-group">
+            <span class="input-area-left">
+              <p>First Name</p>
+              <input type="text" id="first-name" placeholder="Lily" required>
+            </span>
+            <span class="input-area-right">
+              <p>Last Name</p>
+              <input type="text" id="last-name" placeholder="Kwan" required>
+            </span>
+          </div>
+          <div class="form-group">
+            <span class="input-area-left">
+              <p>Email</p>
+              <input type="email" id="email" placeholder="lilykwan@mail.ca" required>
+            </span>
+            <span class="input-area-right">
+              <p>Phone Number</p>
+              <input type="tel" id="phone" placeholder="+1-XXX-XXX-XXXX" required>
+            </span>
+          </div>
+          <span class="input-area-full">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="1234 Street Name" required>
+          </span>
+          <span class="input-area-full">
+            <label for="address">Address 2 (optional)</label>
+            <input type="text" id="address" placeholder="Enter your address">
+          </span>
+          
+          <div class="form-city-area">
+            <span class="input-area">
+              <label for="city">City:</label>
+              <input type="text" id="city" required>
+            </span>
+            <span class="input-area">
+              <label for="state">State:</label>
+              <input type="text" id="state" required>
+            </span>
+            <span class="input-area">
+              <label for="zip">Zip Code:</label>
+              <input type="text" id="zip" required>
+            </span>
+          </div>
+          <h3>Billing Information</h3>
+          <div class="checkbox-group">
+            <input type="checkbox" id="same-as-shipping-address" name="same-as-shipping-address">
+            <label for="same-as-shipping-address">Same as shipping address</label>
+          </div>
+
+          <h3>Delivery Options</h3>
+          <div id="delivery-group">
+            <span class="delivery">
+              <input type="radio" id="standard-delivery" name="delivery-option" value="standard" checked>
+              <span class="delivery-text">
+                <label for="standard-delivery">Standard Delivery</label>
+                <p>7-10 days</p>
+              </span>
+            </span>
+            <label class="delivery-fee">CAD 6</label>
+          </div>
+          <div id="delivery-group">
+            <span class="delivery">
+              <input type="radio" id="express-delivery" name="delivery-option" value="express">
+              <span class="delivery-text">
+                <label for="express-delivery">Express Delivery</label>
+                <p>3-5 days</p>
+              </span>
+            </span>
+            <label class="delivery-fee">CAD 15</label>
+          </div>
+          <h3>Payment Information</h3>
+          <span class="input-area-full">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+          </span>
+          <span class="input-area-full">
+            <label for="card-name">Name on Card:</label>
+            <input type="text" id="card-name" placeholder="Lily Kwan" required>
+          </span>
+          <div class="form-group">
+            <span class="input-area-left">
+              <label for="card-expiry">Expiry Date:</label>
+              <input type="text" id="card-expiry" placeholder="MM/YY" required>
+            </span>
+            <span class="input-area-right">
+              <label for="card-cvv">CVV:</label>
+            <input type="text" id="card-cvv" placeholder="XXX" required>
+            </span>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="save-card-info" name="save-card-info">
+            <label for="save-card-info">Save my credit card information</label>
+          </div>
+
+          <button id="submit" class="submit" type="submit">Place Order</button>
+        </form>
+      </main>
+    </section>
+    <footer>
+      <div class="footer-row1">
+        <div class="column">
+          <img src="images/Logo.png" alt="Logo">
+        </div>
+        <div class="column">
+          <h3>Customer Care</h3>
+          <ul>
+            <li>Contact Us</li>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Track My Order</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>Gift Cards</li>
+            <li>Sign Up For Email</li>
+            <li>Become A Member</li>
+            <li>Track My Membership Rules</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>General</h3>
+          <ul>
+            <li>Help</li>
+            <li>Careers</li>
+            <li>Ad Choices</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-row2">
+        <img class="social" src="images/instagram.png">
+        <img class="social" src="images/facebook.png">
+        <img class="social" src="images/tiktok.png">
+        <img class="social" src="images/twitter.png">
+      </div>
+      <p>All Rights Reserved by Arngren.net</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>
